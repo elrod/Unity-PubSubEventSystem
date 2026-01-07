@@ -14,6 +14,7 @@ namespace com.elrod.pubsubeventsystem
         
 #if UNITY_EDITOR
         public event Action<int> OnSubscribersChanged;
+        public event Action OnNodeActivated;
 #endif
 
         public GameEventNode(string eventTopic = "/", GameEventNode parent = null)
@@ -89,6 +90,7 @@ namespace com.elrod.pubsubeventsystem
         public void InvokeSubscribersCallbacks(GameEvent gameEvent)
         {
             OnEventTriggered?.Invoke(gameEvent);
+            OnNodeActivated?.Invoke();
             _parent?.InvokeSubscribersCallbacks(gameEvent);
         }
 #if UNITY_EDITOR

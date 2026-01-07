@@ -129,7 +129,7 @@ public class GameEventTreeView : GraphView
                         bool parentIsRoot = lastIndexOfSlash == 0;
                         bool srcIsParent = dstNode.title.Substring(0, lastIndexOfSlash) == srcNode.title;
 
-                        if ((parentIsRoot || srcIsParent) && srcNode.nodeTreeLayer == dstNode.nodeTreeLayer - 1)
+                        if ((parentIsRoot || srcIsParent) && srcNode.NodeTreeLayer == dstNode.NodeTreeLayer - 1)
                         {
                             var edge = new Edge();
                             edge.output = srcNode.OutputPort;
@@ -215,7 +215,7 @@ public class GameEventTreeView : GraphView
             {
                 GUID = Guid.NewGuid().ToString(),
                 title = rootTitle,
-                isRoot = true,
+                IsRoot = true,
                 AssociatedNode = eventsTree.GetTopic("/")
             };
 
@@ -238,7 +238,7 @@ public class GameEventTreeView : GraphView
             {
                 GUID = Guid.NewGuid().ToString(),
                 title = nodeName,
-                nodeTreeLayer = layer,
+                NodeTreeLayer = layer,
                 AssociatedNode = eventsTree.GetTopic(nodeName)
             };
 
