@@ -40,7 +40,6 @@ namespace com.elrod.pubsubeventssystem.editor
 
         private void GenerateTree()
         {
-            Debug.Log("Generating Tree");
             DeleteElements(graphElements);
 
             rootNode = GenerateRootNode(eventsTree.Root.Topic);

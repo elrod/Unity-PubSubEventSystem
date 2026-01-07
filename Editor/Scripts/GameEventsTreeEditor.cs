@@ -10,6 +10,7 @@ namespace com.elrod.pubsubeventssystem.editor
     {
         private const int INITIALIZATION_MAXIMUM_LEAVES = 10;
 
+        private bool _exitingPlayMode;
         private GameEventTreeView _treeView;
         private bool _eventsManagerAvailable;
 
@@ -39,15 +40,22 @@ namespace com.elrod.pubsubeventssystem.editor
                 if (_eventsManagerAvailable)
                 {
                     GameEventSystem.Instance.EventsTree.OnTreeChanged -= EventsTree_OnTreeChanged;
+                    rootVisualElement.Clear();
                     _eventsManagerAvailable = false;
+                    _exitingPlayMode = true;
                 }
+            }
+
+            if (stateChange == PlayModeStateChange.EnteredPlayMode)
+            {
+                _exitingPlayMode = false;
             }
                 
         }
         
         private void OnGUI()
         {
-            if (!Application.isPlaying) return;
+            if (!Application.isPlaying || _exitingPlayMode) return;
             UpdateEventsManager();
         }
         
@@ -67,7 +75,6 @@ namespace com.elrod.pubsubeventssystem.editor
         
         private void EventsTree_OnTreeChanged()
         {
-            Debug.Log("Events Tree Changed");
             rootVisualElement.Clear();
             ConstructTree(GameEventSystem.Instance.EventsTree, false);
         }
