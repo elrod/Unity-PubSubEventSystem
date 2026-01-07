@@ -74,9 +74,7 @@ namespace com.elrod.pubsubeventssystem.editor
 
         private void ConstructTree(GameEventTree eventsTree, bool interactable = true)
         {
-            var collapsableTopics = eventsTree.GetTreeLeavesParents()
-                .Where(topic => eventsTree.GetChildrenCountForTopic(topic) > INITIALIZATION_MAXIMUM_LEAVES);
-            _treeView = new GameEventTreeView(eventsTree, null, interactable)
+            _treeView = new GameEventTreeView(eventsTree, interactable)
             {
                 name = "Events Tree"
             };
