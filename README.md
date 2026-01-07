@@ -14,7 +14,7 @@ for example if you are making a built-in toast notification system that displays
 ## Features
 - Publish/Subscribe event system
 - Event tree structure
-- Event visualization in the editor (with subscribers list and visual activation feedback)
+- Runtime event visualization in the editor (with subscribers list and visual activation feedback)
 
 ## Samples
 See the [Samples](Samples) folder for examples of how to use the package.
