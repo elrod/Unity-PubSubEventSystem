@@ -7,6 +7,10 @@ A publish/subscribe game event system for Unity inspired by the MQTT protocol
 This package provides the base classes to setup a publish/subscribe event system in your Unity project.
 Events are organized in a tree structure, allowing you to subscribe to a specific event or all events in a specific branch.
 
+## When to use it?
+It may be useful every time you need to listen for a family of events and respond accordingly,
+for example if you are making a built-in toast notification system that displays similar message on response to different events.
+
 ## Features
 - Publish/Subscribe event system
 - Event tree structure
