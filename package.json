@@ -1,0 +1,18 @@
+{
+  "name": "com.elrod.pubsubeventsystem",
+  "displayName": "com.elrod.pubsubeventsystem",
+  "version": "0.1.0",
+  "unity": "6000.3",
+  "unityRelease": "2f1",
+  "description": "A general purpose publish-subscribe event system \ninspired by the MQTT protocol",
+  "dependencies": {
+    "com.unity.test-framework": "1.6.0"
+  },
+  "samples": [
+    {
+      "displayName": "Basic",
+      "description": "A simple example of using the PubSubEventSystem",
+      "path": "Samples/Basic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Elrod.Comelrodpubsubeventsystem.Tests",
+    "references": [
+        "Elrod.Comelrodpubsubeventsystem"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

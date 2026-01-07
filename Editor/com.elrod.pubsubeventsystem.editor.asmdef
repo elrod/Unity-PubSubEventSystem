@@ -1,0 +1,19 @@
+{
+    "name": "com.elrod.pubsubeventsystem.editor",
+    "rootNamespace": "",
+    "references": [
+        "Elrod.Comelrodpubsubeventsystem",
+        "com.elrod.pubsubeventsystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

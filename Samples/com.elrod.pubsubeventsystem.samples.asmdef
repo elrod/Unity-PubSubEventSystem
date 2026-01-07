@@ -1,0 +1,14 @@
+{
+    "name": "com.elrod.pubsubeventsystem.samples",
+    "rootNamespace": "",
+    "references": ["GUID:9ed651de6ccb344ffb6dc1acf7729116"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
