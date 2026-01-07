@@ -16,3 +16,4 @@ Events are organized in a tree structure, allowing you to subscribe to a specifi
 See the [Samples](Samples) folder for examples of how to use the package.
 
 - Basic - Shows how to setup a basic publish/subscribe event system
+- Custom Events - Shows how to create custom events and subscribe to them

@@ -10,9 +10,9 @@
   },
   "samples": [
     {
-      "displayName": "Basic",
-      "description": "A simple example of using the PubSubEventSystem",
-      "path": "Samples/Basic"
+      "displayName": "Samples",
+      "description": "A set of examples of using the PubSubEventSystem",
+      "path": "Samples"
     }
   ]
 }
